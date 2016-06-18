@@ -1,6 +1,10 @@
 **Sinatra Exercise**
 
-Sinatra is a simple web framework for Ruby, similar in logic to Rails. You can view the documentation [here](http://www.sinatrarb.com/) and the Github repo [here](https://github.com/sinatra/sinatra).
+Sinatra is a simple web framework for Ruby, similar in logic to Rails. It uses [erb](http://www.stuartellis.eu/articles/erb/), and can take routes with parameters.
+
+=> [doc](http://www.sinatrarb.com/)
+
+=> [Github](https://github.com/sinatra/sinatra)
 
 *Don't forget to run ```gem install sinatra``` && ```gem install sinatra-contrib``` in order to run the program*
 
