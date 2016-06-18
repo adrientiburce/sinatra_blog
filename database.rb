@@ -30,8 +30,10 @@ DB = [
 ]
 
 
-COMMENTS = [["super", "cool!", "bien écrit", "first!", "why is everyone speaking French here?"],
+COMMENTS = [
+  ["super", "cool!", "bien écrit", "first!", "why is everyone speaking French here?"],
   ["J'ai préféré l'autre article", "je n'ai pas vraiment compris le deuxième paragraphe", "une suite?"],
   ["A revoir", "Découvrez ma page Facebook! @Kamsoerzi"],
   ["Nul"],
-  ["J'ai adoré mais j'aurais préféré qu'elle finisse avec John", "good article", "Ajouté dans mes favoris!"]]
+  ["J'ai adoré mais j'aurais préféré qu'elle finisse avec John", "good article", "Ajouté dans mes favoris!"]
+]
