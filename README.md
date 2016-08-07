@@ -1,4 +1,12 @@
+You'll find 2 parts to this test:
+
+**Questions**
+
+Take a look at questions.txt and answer the questions presented to you
+
 **Sinatra Exercise**
+
+This is a fullstack exercise, creating a simple webapp in Sinatra
 
 Sinatra is a simple web framework for Ruby, similar in logic to Rails. It uses [erb](http://www.stuartellis.eu/articles/erb/), and can take routes with parameters.
 
@@ -10,9 +18,15 @@ Sinatra is a simple web framework for Ruby, similar in logic to Rails. It uses [
 
 In this simple exercise, a database of posts and comments is given to you (see Database.rb). Comments are ordered to match each post (first comment array - first post, etc.).
 
-Your goal is to create a credible web application, similar in logic to HackerNews or Reddit. The app must make intelligent use of the components of each post, and overall look like a real web app. The rest is completely up to you.
+Your goal is to create a credible web application listing posts and comments. The app must make intelligent use of the components of each post, and overall look like a real web app. The rest is completely up to you.
 
-This is a test of your front-end, back-end capabilities, as well as your creativity. Though the app is simple, we will be looking for surprising features, a clean back-end code, as well as a refined front-end.
+This is a test of your front-end, back-end capabilities, as well as your creativity. We will be looking for:
+
+- A clean backend code
+
+- A professional-looking front-end
+
+- A surprising feature: something we wouldn't have thought about.
 
 Overall, we're just looking for you to surprise us!
 
