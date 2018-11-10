@@ -3,11 +3,15 @@ body{
     background-color: HSL(48, 54%, 95%);
 }
 
+.bloc_page{
+    width: 80%;
+}
+
 /*-------  H E A D E R    ---------*/
 header{
     margin-top: -20px;
     background-attachment: fixed;
-    height: 300px;
+    height: 400px;
     background-image: url("./header.jpeg");
     opacity: 0.7;
     background-size: cover;
@@ -22,13 +26,14 @@ header h1{
     text-shadow: 3px 3px 2px rgb(88, 84, 84);
     color: rgb(45, 54, 56);
 }
+
 /*-------  H O M E  P A G E    ---------*/
 
 h2 .title{
     font-family: 'Roboto', Arial;
 }
 
-/*-------  S H O W    ---------*/
+/*-------  S H O W    A R T I C L E   ---------*/
 
 h1.title{
     font-family: 'Roboto', Arial;
@@ -45,12 +50,16 @@ h1.title{
 .card p {
     font-family: 'Roboto', Arial;
 }
-.note{
+.rating{
     cursor: default;
     background-color: HSL(53, 98%, 40%);
     transition: background-color 0.7s;
 }
-.note:hover{
+
+button.rating{
+    margin-bottom: 10px;  /* for smaller views */
+}
+.rating:hover{
     background-color: HSL(53, 98%, 47%);
 }
 
@@ -60,7 +69,8 @@ h1.title{
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  width : 50%;
+  width : 60%;
+  margin-bottom: 50px;
 }
 .message{
     color: white;
@@ -75,18 +85,16 @@ h1.title{
     background-color: HSL(211, 62%, 66%);
 }
 
-
-
  /*------- F O O T E R  ---------*/
 
  footer{
-     margin: 0 auto; 
-     margin-top: 10px;
+     width: 100%;
+     position: fixed;
+     bottom: 0;
      background-color: HSL(0, 0%, 50%);    
-     margin-bottom: -10px;
  }
 
  footer p{
-     padding: 5px;
+     padding: 2px;
      padding-right: 15px;
  }

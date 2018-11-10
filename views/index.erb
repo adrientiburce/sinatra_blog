@@ -3,27 +3,25 @@
       <h1 class=""> Bienvenue sur mon Blog </h1>
 </header>
 
-<%for i in 0..4 do%>
+<div class="container bloc_page">
+    <%for i in 0..4 do%>
+        <div class="container-fluid">
+            <h2 class="text-success text-center title ">
+                <%= @database[i][:title] %>
+            </h2>
 
-<div class="container-fluid">
-    <h2 class="text-success text-center title ">
-        <%= @database[i][:title] %>
-    </h2>
-
-    <div class="jumbotron">
-        <div class="row">
-            <div class="cotainer-fluid" style="margin-bottom: 10px;">
-                 <%= @database[i][:content] %>
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="cotainer-fluid" style="margin-bottom: 10px;">
+                        <%= @database[i][:content] %>
+                    </div>
+                    <a href="show/<%=  @database[i][:title].slugify %>/<%= i %> ">
+                        <button type="button" class="btn btn-info">En Savoir plus  <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                    </a>
+                </div>
             </div>
-            <a href="show/<%=  @database[i][:title].slugify %>/<%= i %> ">
-                <button type="button" class="btn btn-info">En Savoir plus  <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-            </a>
         </div>
-
-    </div>
+    <% end %>
 </div>
-    
-<% end %>
-
 
 

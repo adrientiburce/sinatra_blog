@@ -1,28 +1,30 @@
-<h1 class="text-center text-danger title"> 
-    <%= @article[:title] %>
-</h1>
+<div class="container bloc_page">
+    <h1 class="text-center text-danger title"> 
+        <%= @article[:title] %>
+    </h1>
 
-<div class="container-fluid">
-    <a href="/" class="back-home"><button class="btn btn-info"><i class="fa fa-home" aria-hidden="true"></i> Accueil</button></a>
-    
-    <div class="card container-fluid jumbotron">
+    <div class="container-fluid">
+        <a href="/" class="back-home"><button class="btn btn-info"><i class="fa fa-home" aria-hidden="true"></i> Accueil</button></a>
         
-            <div class="col-lg-6" >
-                <p class="text-justify"> <%= @article[:content] %> </p>
-                <button type="button" class="btn btn-lg note">
-                <%= @article[:rating] %>&nbsp&nbsp<i class="fa fa-star" aria-hidden="true"></i> 
-                </button>
-            </div>
-            <div class="col-lg-6" style="display: flex; justify-content: center;">
-                <img src="<%= @article[:photo] %> " style="width: 70%;"/>   
-            </div>
-    
-    </div>
-    <hr style="height:20px" color="black" width="80%">
-    <h2 class="text-secondary"> Commentaires de l'article</h2>
-    <div class="container-fluid message_block">
-            <% for comment in @comments %>
-                <p class="text-center message"> <%= comment %> </p>
-            <% end %>
+        <div class="card container-fluid jumbotron">
+            
+                <div class="col-lg-6" >
+                    <p class="text-justify"> <%= @article[:content] %> </p>
+                    <button type="button" class="btn btn-lg rating">
+                    <%= @article[:rating] %>&nbsp&nbsp<i class="fa fa-star" aria-hidden="true"></i> 
+                    </button>
+                </div>
+                <div class="col-lg-6" style="display: flex; justify-content: center;">
+                    <img src="<%= @article[:photo] %> " style="width: 70%;"/>   
+                </div>
+        
+        </div>
+        <hr style="height:20px" color="black" width="80%">
+        <h2 class="text-secondary"> Commentaires de l'article :</h2>
+        <div class="container-fluid message_block">
+                <% for comment in @comments %>
+                    <p class="text-center message"> <%= comment %> </p>
+                <% end %>
+        </div>
     </div>
 </div>

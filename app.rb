@@ -1,8 +1,7 @@
 require "sinatra"
-require "slugify"
+require "slugify" 
 require "sinatra/reloader" if development?
 require_relative "database"
-
 
 get "/" do
   @title = "Mon Blog !"
@@ -12,7 +11,7 @@ end
 
 get "/show/:slug/:id" do
   @database = DB
-  @article_id = params[:id].to_i  #on convertit le string en int 
+  @article_id = params[:id].to_i  #convert string into int 
   @article_title = @database[@article_id][:title]
   @title = @article_title
   @article = @database[@article_id]
@@ -20,11 +19,13 @@ get "/show/:slug/:id" do
   erb :show
 end
 
+
+#prevent from wrong URL
 get "/show/:slug/:id/*" do
   redirect back
 end
 
-get "/*" do
+get "/*" do   
   pass if request.path_info == "/show"
   redirect back
 end

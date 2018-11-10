@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
   <head>
     <title> <%= @title %></title>
@@ -6,10 +6,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="/style.css">
- <link href="https://fonts.googleapis.com/css?family=Oswald:500|Roboto:300,500" rel="stylesheet">     <%= yield %>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:500|Roboto:300,500" rel="stylesheet">     
+  </head>
+  <body>
+    <%= yield %>
   </body>
 
-  <footer class="mention">
+  <footer>
     <p class="text-right">Copyright© - Adrien Tiburce - Mentions Légales </p>
   </footer>
 </html>
