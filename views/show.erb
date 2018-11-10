@@ -20,11 +20,9 @@
     </div>
     <hr style="height:20px" color="black" width="80%">
     <h2 class="text-secondary"> Commentaires de l'article</h2>
-    <div class="container-fluid comments">
+    <div class="container-fluid message_block">
             <% for comment in @comments %>
-            <div class="container">
-                <p class="text-center"> <%= comment %> </p>
-            </div>
+                <p class="text-center message"> <%= comment %> </p>
             <% end %>
     </div>
 </div>

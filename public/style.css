@@ -1,7 +1,28 @@
 body{
-    width: 80%;
     margin: 0 auto; 
+    background-color: HSL(48, 54%, 95%);
 }
+
+/*-------  H E A D E R    ---------*/
+header{
+    margin-top: -20px;
+    background-attachment: fixed;
+    height: 300px;
+    background-image: url("./header.jpeg");
+    opacity: 0.7;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    position: relative
+}
+
+header h1{
+    font-size: 5em;
+    letter-spacing: 4px;
+    color: rgb(45, 54, 56);
+}
+
+
+/*-------  S H O W    ---------*/
 .mycomment {
     border: 2px solid black; 
     background-color: blue;
@@ -23,6 +44,30 @@ body{
     background-color: HSL(53, 98%, 47%);
 }
 
+/*-------  C O M M E N T S   ---------*/
+
+.message_block{
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width : 50%;
+}
+.message{
+    color: white;
+    border-radius: 4px;
+    margin :5px;
+    padding: 3px;
+    background-color: HSL(211, 62%, 52%);
+    cursor: default;
+    transition: background-color 0.8s; 
+}
+.message:hover{
+    background-color: HSL(211, 62%, 66%);
+}
+
+
+
+
  /*------- F O O T E R  ---------*/
 
  footer{
@@ -31,6 +76,8 @@ body{
      background-color: HSL(0, 0%, 50%);    
      margin-bottom: -10px;
  }
- .mention{
-     width: 100%
+
+ footer p{
+     padding: 5px;
+     padding-right: 10px;
  }
