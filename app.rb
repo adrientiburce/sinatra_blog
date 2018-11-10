@@ -1,6 +1,8 @@
 require "sinatra"
+require "slugify"
 require "sinatra/reloader" if development?
 require_relative "database"
+
 
 get "/" do
   @title = "Bienvenue sur mon super Blog !"
@@ -13,6 +15,7 @@ get "/show/:id" do
   @title = "Présentation d'un article"
   @database = DB
   @article_id = params[:id].to_i  #on convertit le string en int 
+  @test = @database[@article_id][:title].slugify
   @article = @database[@article_id]
   @comments = COMMENTS[@article_id]
   erb :show
