@@ -10,7 +10,6 @@ get "/" do
   erb :index
 end
 
-
 get "/show/:slug/:id" do
   @database = DB
   @article_id = params[:id].to_i  #on convertit le string en int 
@@ -21,7 +20,11 @@ get "/show/:slug/:id" do
   erb :show
 end
 
-get '/guess/:who' do
-  pass unless params['who'] == 'Frank'
-  halt 401, 'go away!'
+get "/show/:slug/:id/*" do
+  redirect back
+end
+
+get "/*" do
+  pass if request.path_info == "/show"
+  redirect back
 end
