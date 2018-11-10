@@ -12,8 +12,8 @@
             <div class="cotainer-fluid" style="margin-bottom: 10px;">
                  <%= @database[i][:content] %>
             </div>
-            <a href="show/<%= i %> ">
-                <button type="button" class="btn btn-info">En Savoir plus</button>
+            <a href="show/<%=  @database[i][:title].slugify %>/<%= i %> ">
+                <button type="button" class="btn btn-info">En Savoir plus  <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
             </a>
         </div>
 

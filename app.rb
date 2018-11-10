@@ -5,17 +5,17 @@ require_relative "database"
 
 
 get "/" do
-  @title = "Bienvenue sur mon super Blog !"
+  @title = "Mon Blog !"
   @database = DB
   erb :index
 end
 
 
-get "/show/:id" do
-  @title = "Présentation d'un article"
+get "/show/:slug/:id" do
   @database = DB
   @article_id = params[:id].to_i  #on convertit le string en int 
-  @test = @database[@article_id][:title].slugify
+  @article_title = @database[@article_id][:title]
+  @title = @article_title
   @article = @database[@article_id]
   @comments = COMMENTS[@article_id]
   erb :show
