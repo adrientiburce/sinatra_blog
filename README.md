@@ -1,10 +1,10 @@
 You'll find 2 parts to this test:
 
-**Questions**
+**1/ Questions**
 
 Take a look at questions.txt and answer the questions presented to you
 
-**Sinatra Exercise**
+**2/ Sinatra Exercise**
 
 This is a fullstack exercise, creating a simple webapp in Sinatra
 

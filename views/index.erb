@@ -1,0 +1,26 @@
+
+<h1 class="text-center text-primary"> Mon Super Blog !! </h1>
+<%for i in 0..4 do%>
+
+<div class="container-fluid">
+    <h2 class="text-success text-center ">
+        <%= @database[i][:title] %>
+    </h2>
+
+    <div class="jumbotron">
+        <div class="row">
+            <div class="cotainer-fluid" style="margin-bottom: 10px;">
+                 <%= @database[i][:content] %>
+            </div>
+            <a href="show/<%= i %> ">
+                <button type="button" class="btn btn-info">En Savoir plus</button>
+            </a>
+        </div>
+
+    </div>
+</div>
+    
+<% end %>
+
+
+
